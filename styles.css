@@ -1,0 +1,148 @@
+html {
+  background-color: rgb(0, 50, 56);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.musicalNote {
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.volumeDescription {
+  position: absolute;
+  top: 30px;
+  color: #ffffff98;
+}
+
+.volume {
+  position: absolute;
+  top: 80px;
+  color: #ffffff;
+}
+
+.volume input {
+  accent-color: white;
+}
+
+.playit {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+#piano {
+  background-color: #461f00;
+  width: 495px;
+  height: 340px;
+  margin: 40px auto;
+  margin-bottom: 20px;
+  padding: 140px 20px 0 20px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.keys {
+  background-color: #040404;
+  width: 455px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.key {
+  background-color: #ffffff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 3px 3px;
+}
+
+.blackKeys {
+  position: absolute;
+  display: flex;
+  bottom: 110px;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.black {
+  margin-right: 17.5px;
+  margin-left: 17.5px;
+  color: #ffffff70;
+}
+
+.twoBlack {
+  display: flex;
+  top: 20px;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.threeBlack {
+  display: flex;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-right: 25px;
+}
+
+.whiteKeys {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.white {
+  margin: 17.5px;
+  color: rgba(0, 0, 0, 0.527);
+}
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+.playTone {
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.playTone:hover {
+  scale: 1.2;
+  color: rgb(65, 33, 57);
+}

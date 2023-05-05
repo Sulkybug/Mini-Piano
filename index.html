@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Piano Keyboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Mini Piano</h1>
+    <p class="musicalNote">🎵</p>
+    <div id="piano">
+      <p class="volumeDescription">Volume: 50%</p>
+      <div class="volume">
+        <span> 🔊</span>
+        <input type="range" min="0" max="1" value="0.5" step="any" />
+      </div>
+      <div class="blackKeys">
+        <div class="twoBlack">
+          <p class="cnum black">W</p>
+          <p class="dnum black">E</p>
+        </div>
+        <div class="threeBlack">
+          <p class="fnum black">T</p>
+          <p class="gnum black">Y</p>
+          <p class="anum black">U</p>
+        </div>
+        <div class="twoBlack">
+          <p class="c5num black">O</p>
+          <p class="d5num black">P</p>
+        </div>
+      </div>
+
+      <div class="keys">
+        <div class="key"></div>
+        <div class="key black--key"></div>
+        <div class="key black--key"></div>
+        <div class="key"></div>
+        <div class="key black--key"></div>
+        <div class="key black--key"></div>
+        <div class="key black--key"></div>
+
+        <div class="key"></div>
+        <div class="key black--key"></div>
+        <div class="key black--key"></div>
+      </div>
+
+      <div class="whiteKeys">
+        <p class="c white">A</p>
+        <p class="d white">S</p>
+        <p class="e white">D</p>
+        <p class="f white">F</p>
+        <p class="g white">G</p>
+        <p class="a white">H</p>
+        <p class="b white">J</p>
+        <p class="c5 white">K</p>
+        <p class="d5 white">L</p>
+        <p class="e5 white">;</p>
+      </div>
+    </div>
+    <button class="playTone">Play Demo ▶</button>
+    <p class="playit">Use your keyboard to play it.</p>
+  </body>
+</html>
