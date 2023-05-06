@@ -146,3 +146,9 @@ h1 {
   scale: 1.2;
   color: rgb(65, 33, 57);
 }
+
+@media only screen and (max-width: 766px) {
+  #piano {
+    transform: scale(0.75);
+  }
+}
