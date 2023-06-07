@@ -79,6 +79,74 @@ document.addEventListener("keydown", (info) => {
   }
 });
 
+cK.addEventListener("click", () => {
+  callFunctionsWhite("C", c, cK);
+});
+
+cnumB.addEventListener("click", () => {
+  callFunctionsBlack("C#", cnum, cnumB);
+});
+
+dK.addEventListener("click", () => {
+  callFunctionsWhite("D", d, dK);
+});
+
+dnumB.addEventListener("click", () => {
+  callFunctionsBlack("D#", dnum, dnumB);
+});
+
+eK.addEventListener("click", () => {
+  callFunctionsWhite("E", e, eK);
+});
+
+fK.addEventListener("click", () => {
+  callFunctionsWhite("F", f, fK);
+});
+
+fnumB.addEventListener("click", () => {
+  callFunctionsBlack("F#", fnum, fnumB);
+});
+
+gK.addEventListener("click", () => {
+  callFunctionsWhite("G", g, gK);
+});
+
+gnumB.addEventListener("click", () => {
+  callFunctionsBlack("G#", gnum, gnumB);
+});
+
+aK.addEventListener("click", () => {
+  callFunctionsWhite("A", a, aK);
+});
+
+anumB.addEventListener("click", () => {
+  callFunctionsBlack("A#", anum, anumB);
+});
+
+bK.addEventListener("click", () => {
+  callFunctionsWhite("B", b, bK);
+});
+
+c5K.addEventListener("click", () => {
+  callFunctionsWhite("C5", c5, c5K);
+});
+
+c5numB.addEventListener("click", () => {
+  callFunctionsBlack("C5#", c5num, c5numB);
+});
+
+d5K.addEventListener("click", () => {
+  callFunctionsWhite("D5", d5, d5K);
+});
+
+d5numB.addEventListener("click", () => {
+  callFunctionsBlack("D5#", d5num, d5numB);
+});
+
+e5K.addEventListener("click", () => {
+  callFunctionsWhite("E5", e5, e5K);
+});
+
 button.addEventListener("click", () => {
   playSong();
 });
