@@ -16,6 +16,26 @@ const e5 = new Audio("PianoE5.mp3");
 const c5num = new Audio("PianoC5num.mp3");
 const d5num = new Audio("PianoD5num.mp3");
 
+const audios = [
+  c,
+  cnum,
+  d,
+  dnum,
+  e,
+  f,
+  fnum,
+  g,
+  gnum,
+  a,
+  anum,
+  b,
+  c5,
+  d5,
+  e5,
+  c5num,
+  d5num,
+];
+
 const cK = document.querySelector(".c");
 const dK = document.querySelector(".d");
 const eK = document.querySelector(".e");
@@ -153,23 +173,9 @@ button.addEventListener("click", () => {
 
 const handleVolume = (i) => {
   volumeDescription.innerHTML = `Volume: ${(i.target.value * 100).toFixed()}%`;
-  c.volume = i.target.value;
-  d.volume = i.target.value;
-  cnum.volume = i.target.value;
-  dnum.volume = i.target.value;
-  e.volume = i.target.value;
-  f.volume = i.target.value;
-  g.volume = i.target.value;
-  a.volume = i.target.value;
-  fnum.volume = i.target.value;
-  gnum.volume = i.target.value;
-  anum.volume = i.target.value;
-  b.volume = i.target.value;
-  c5.volume = i.target.value;
-  d5.volume = i.target.value;
-  e5.volume = i.target.value;
-  c5num.volume = i.target.value;
-  d5num.volume = i.target.value;
+  audios.forEach((element) => {
+    element.volume = i.target.value;
+  });
 };
 
 volumeSlider.addEventListener("input", handleVolume);
